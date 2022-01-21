@@ -13,7 +13,18 @@
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/pt_serif"
         android:text="@string/name"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/name_edit"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/whats_is_your_name"
+        android:inputType="textMultiLine|textPersonName|text"
         android:textAlignment="center" />
 
     <ImageView
@@ -36,6 +47,5 @@
             android:lineSpacingMultiplier="1.2"
             android:text="@string/bio" />
     </ScrollView>
-
 
 </LinearLayout>
