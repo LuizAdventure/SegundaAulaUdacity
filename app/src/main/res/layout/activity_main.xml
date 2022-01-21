@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingStart="@dimen/padding"
-    android:paddingEnd="@dimen/padding">
+    android:paddingEnd="@dimen/padding"
+    android:visibility="visible">
 
 
     <TextView
@@ -26,6 +27,22 @@
         android:hint="@string/whats_is_your_name"
         android:inputType="textMultiLine|textPersonName|text"
         android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:fontFamily="@font/pt_serif"
+        android:text="@string/done" />
+
+    <TextView
+        android:id="@+id/name_view"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/star_image"

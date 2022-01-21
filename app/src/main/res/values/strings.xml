@@ -11,4 +11,6 @@
     Android é um sistema operacional (SO) baseado no núcleo Linux, desenvolvido por um consórcio de desenvolvedores conhecido como Open Handset Alliance, sendo o principal colaborador o Google.
     Android é um sistema operacional (SO) baseado no núcleo Linux, desenvolvido por um consórcio de desenvolvedores conhecido como Open Handset Alliance, sendo o principal colaborador o Google.</string>
     <string name="whats_is_your_name">Qual é seu nome?</string>
+    <string name="done">Done</string>
+    <string name="name_view">NameView</string>
 </resources>
