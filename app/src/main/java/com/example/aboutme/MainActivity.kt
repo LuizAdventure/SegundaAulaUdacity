@@ -12,11 +12,15 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    private val myName: MyName = MyName("Leitura")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         //setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+
+        binding.myName = myName
 
         //findViewById<Button>(R.id.done_button).setOnClickListener {
         //  addName(it)
@@ -31,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         //val textView = findViewById<TextView>(R.id.name_view)
 
         binding.apply {
+            myName?.nickname = nameEdit.text.toString()
             invalidateAll()
             binding.nameView.text = binding.nameEdit.text
             binding.nameEdit.visibility = View.GONE
